@@ -22,7 +22,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'container',
       remotes: {
-        appOne: 'appOne@http://localhost:8081/remoteEntry.js',
+        appOne: 'appOne@http://localhost:8081/remoteEntry.js', // this appOne@http  before https has to match the name inside the webpack.config.js in the AppOne application. It has to be identical. --> name: 'appOne',
         appTwo: 'appTwo@http://localhost:8082/remoteEntry.js',
       },
     }),

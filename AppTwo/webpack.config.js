@@ -23,7 +23,7 @@ module.exports = {
       name: 'appTwo',
       filename: 'remoteEntry.js',
       exposes: {
-        './AppTwoIndex': './src/index',
+        './AppTwoIndex': './src/App',
       },
     }),
     new HtmlWebpackPlugin({
